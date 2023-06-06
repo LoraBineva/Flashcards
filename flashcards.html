@@ -1,1 +1,62 @@
+﻿<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="flashcard.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Flashcards</title>
+</head>
+
+<body>
+    <main>
+         <!-- This is where we input the cards -->
+        <header>
+            <div class ="container">
+                <div id ="nav">
+                    <h1>Flashcards</h1>
+                    <div>
+                        <button onclick="showCreateCardBox()">New Card</button>
+                        <button onclick="delFlashcards()"> Delete All</button>
+                    </div>
+                </div>
+                <div class="create-box">
+                    <h2 style ="text-align: center;color:black">Create Flashcard</h2> <!--THIS STYLE HAS TO GO TO THE CSS-->
+                    <label for = "question">Question</label>
+                    <textarea id="question"></textarea>
+                <br>
+                    <label for = "answer">Answer</label>
+                    <textarea id="answer"></textarea>
+                <div>
+                    <button onclick ="addFlashcard()">Save</button>
+                    <button onclick ="hideCreateBox()">Close</button>
+                </div>
+            </div>
+        </header>
+            <!-- This is where the flashcards begin -->
+        <div class = "card">   
+            <div class = "card_inner">  
+                <div class ="card_face card_face-front">
+                    <h2>Name of Card in the Front</h2>
+                </div>
+                 <div class ="card_face card_face-back">
+                    <div class="card_content">
+                        <div class="card_header">
+                            
+                        </div> 
+                        <div class="card_body">
+                            <h3>Name in the back</h3>
+                            <p> Paragraph blah blah</p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+ 
+        </div>
+        <script src ="Script.js"></script>
+    </main>
+</body>
+</html>
 
