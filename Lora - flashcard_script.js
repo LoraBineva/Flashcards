@@ -7,6 +7,11 @@ const answer = document.getElementById("answer");
 let contentArray = localStorage.getItem('items') ?
 JSON.parse(localStorage.getItem('items')) : [];
 
+const card = document.querySelector('.card_inner');
+card.addEventListener('click', function(){
+    card.classList.toggle('is-flipped');
+});
+
 contentArray.forEach(divMaker)
 // this is the function which displays the cards  
 function divMaker(text){
